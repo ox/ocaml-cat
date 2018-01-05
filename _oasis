@@ -17,5 +17,6 @@ XOCamlbuildPluginTags: package(ppx_driver.ocamlbuild)
 Executable "Cat"
   Path: src
   MainIs: cat.ml
+  CompiledObject: best
   BuildDepends:
     core
