@@ -1,0 +1,21 @@
+Name: Cat
+Version: 0.1
+Synopsis: A cat clone
+Authors: Artem Titoulenko <artem.titoulenko@gmail.com>
+License: MIT
+Description: Cloning the unix cat tool
+
+OASISFormat: 0.4
+BuildTools: ocamlbuild
+Plugins: META (0.4), DevFiles (0.4)
+
+OCamlVersion: >= 4.01
+
+AlphaFeatures:         ocamlbuild_more_args
+XOCamlbuildPluginTags: package(ppx_driver.ocamlbuild)
+
+Executable "Cat"
+  Path: src
+  MainIs: cat.ml
+  BuildDepends:
+    core
